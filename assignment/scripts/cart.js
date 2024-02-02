@@ -3,8 +3,37 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 
+// create an array
+let basket = [];
 
+function addItem(item) {
+   basket.push(item);
+   return true;
+}
+addItem('hello');
+addItem('new item');
 
+console.log(basket)
+
+function listItems() {
+    for(let item of basket)
+    {console.log(item)}
+
+}
+
+function empty() {
+    basket.length = 0;
+
+    //basket.splice(0,basket.length);
+
+    // while(basket.length > 0) {
+    //     basket.pop();
+    // }
+};
+
+empty();
+
+console.log(basket)
 
 
 
